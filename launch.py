@@ -122,5 +122,7 @@ def download_models():
 
 download_models()
 
+from IPython.display import Audio, display
+display(Audio(url="https://assets.mixkit.co/active_storage/sfx/2870/2870.wav", autoplay=True, rate=22050))
 
 from webui import *
