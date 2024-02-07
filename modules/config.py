@@ -287,7 +287,7 @@ available_aspect_ratios = get_config_item_or_set_default(
         '896*1152', '896*1088', '960*1088', '960*1024', '1024*1024', '1024*960',
         '1088*960', '1088*896', '1152*896', '1152*832', '1216*832', '1280*768',
         '1344*768', '1344*704', '1408*704', '1472*704', '1536*640', '1600*640',
-        '1664*576', '1728*576'
+        '1664*576', '1728*576', '1920*1440'
     ],
     validator=lambda x: isinstance(x, list) and all('*' in v for v in x) and len(x) > 1
 )
@@ -308,7 +308,7 @@ default_cfg_tsnr = get_config_item_or_set_default(
 )
 default_overwrite_step = get_config_item_or_set_default(
     key='default_overwrite_step',
-    default_value=-1,
+    default_value=6,
     validator=lambda x: isinstance(x, int)
 )
 default_overwrite_switch = get_config_item_or_set_default(
